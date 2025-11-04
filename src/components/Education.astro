@@ -1,0 +1,98 @@
+<section class="container-link education" id="education">
+  <h1 class="education__title">Educación</h1>
+
+  <div class="education__universities">
+    <article class="education__university">
+      <div class="education__university-box-title">
+        <h2 class="education__university-title">Ingeniería en sistemas</h2>
+        <h3 class="education__university-state education__university-state--studying">Cursando</h3>
+      </div>
+      <p>Uniminto | 09 septiembre 2024 - Actualmente</p>
+    </article>
+
+    <article class="education__university">
+      <div class="education__university-box-title">
+        <h2 class="education__university-title">Tecnólogo análisis y desarrollo de sistemas de información</h2>
+        <h3 class="education__university-state education__university-state--certificate">Certificado</h3>
+      </div>
+      <p>Sena | 23 enero 2023 - 16 junio 2025</p>
+    </article>
+
+    <article class="education__university">
+      <div class="education__university-box-title">
+        <h2 class="education__university-title">Tecnico en sistemas</h2>
+        <h3 class="education__university-state education__university-state--certificate">Certificado</h3> 
+      </div>
+      <p>Sena | 15 marzo 2021 - 08 Diciembre 2022</p>
+    </article>
+  </div>
+</section>
+
+
+<style>
+  .education{
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    /* padding-bottom: 40px; */
+     /* padding-block: 40px; */
+  }
+
+  .education__universities{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education__title{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .education__university{
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .education__university:hover{
+    background-color: var(--card-bg-hover)
+  }
+
+  .education__university-box-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .education__university-title{
+    font-size: 1.2rem;
+  }
+
+  .education__university-state{
+    font-size: 1.0rem;
+  }
+
+  .education__university-state--certificate{
+    /* color: rgb(1, 120, 1); */
+    color: rgb(132, 255, 132);
+  }
+  
+  .education__university-state--studying{
+    /* color: rgb(214, 214, 2); */
+    color: rgb(243, 255, 132);
+  }
+
+  @media (min-width: 700px){
+    .education__university-box-title{
+      align-items: baseline;
+    }
+
+    .education__university-title{
+      font-size: 1.5rem;
+    }
+
+    .education__university-state{
+      font-size: 1.1rem;
+    }
+  }
+</style>

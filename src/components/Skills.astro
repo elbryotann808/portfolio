@@ -1,0 +1,91 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
+<section class="container-link skills" id="skills">
+  <h1 class="skills__title">Habilidades</h1>
+
+  <div class="skills__list-skills">
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="html"/>  
+      <p class="skills__name-skill">HTML</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="css"/>
+      <p class="skills__name-skill">CSS</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="js"/>
+      <p class="skills__name-skill">JavaScript</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="ts"/>
+      <p class="skills__name-skill">TypeScript</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="react"/>
+      <p class="skills__name-skill">React</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="node"/>
+      <p class="skills__name-skill">Node.js</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="express"/>
+      <p class="skills__name-skill">Express</p>
+    </div>
+
+    <div class="skills__box-skill">
+      <Icon class="skills__box-icon" name="git"/>
+      <p class="skills__name-skill">Git</p>
+    </div>
+  </div>  
+</section> 
+
+<style>
+  .skills{
+    gap: 10px;
+  }
+
+  .skills__title{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+
+  .skills__list-skills{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 8px;
+  }
+
+  .skills__box-skill{
+    display: flex;
+    flex-direction: column;
+    padding-block: 19px;
+    background-color:  var(--card-bg);
+    border-radius: 10px;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .skills__box-skill:hover{
+    background-color: var(--card-bg-hover);
+  }
+
+  .skills__box-icon{
+    font-size: 40px;
+  }
+
+  .skills__name-skill{
+    font-size: 1.1rem;
+  }
+  
+  @media (min-width: 700px){}
+</style>

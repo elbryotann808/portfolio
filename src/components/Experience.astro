@@ -1,0 +1,63 @@
+
+<section class="container-link experience" id="experience">
+  <h1 class="experience__title">Experiencia</h1>
+
+  <div class="experience__list-exp">
+    <article class="experience__company">
+      <div class="experience__company-box-title">
+        <h2 class="experience__company-title">Full Stack developer</h2>
+        <p class="experience__company-position">Trainee</p>
+      </div>
+      <p class="experience__company-time">18 Diciembre 2023 - 15 junio 2024</p>
+      <p class="experience__company-info">Durante mi puesto diseñe y desarrollé una página web completa y funcional para una ferreteria, 
+        desde el diseño de la interfaz hasta la integracion del servidor y una base datos. 
+        con el objectivo de aumentar la visibilidad en internet. implemente el front con React, el backend con Node.js, autentificacion 
+        con JWT y persistencia con MySQL.
+      </p>
+    </article>
+  </div>
+</section>
+
+<style>
+  .experience{
+  }
+
+  .experience__title{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+
+  .experience__list-exp{
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .experience__list-exp:hover{
+    background-color: var(--card-bg-hover);
+  }
+
+  .experience__company-box-title{
+    display: flex;
+    gap: 5px;
+    align-items: first baseline;
+  }
+
+  .experience__company-position{
+    color: rgb(190, 189, 189);
+  }
+
+  .experience__company-time{
+    margin-bottom: 10px;
+  }
+
+  .experience__company-info{
+    color: rgb(211, 210, 210);
+  }
+
+  @media (min-width: 700px){
+    /* .experience{
+      width: 80%;
+    } */
+  }
+</style>
