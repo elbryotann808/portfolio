@@ -25,14 +25,15 @@
           </div> 
 
           <div class="card__box-buttons">
-            <button class="card__button card__button-web-site">Sitio web</button>
-            <button class="card__button card__button-code">Codigo</button>
+            <a class="card__button card__button-code" href={proyect.linkCode} target="_blank" rel="noopener noreferrer">Codigo</a>
+            {
+              proyect.linkPage && <a class="card__button card__button-web-site" href={proyect.linkPage} href="" target="_blank" rel="noopener noreferrer">Sitio web</a>
+            }
           </div>
         </div>
       </li>
       ))}
   </ul>
-<!-- Despues de proyect vamos a colocar Habilidades -->
 </section>  
 
 <style>
@@ -86,7 +87,7 @@
   .card__info-description{
     max-height: 150px;
     overflow-y: auto;
-    color: rgb(153, 153, 153);
+    color: rgb(185, 176, 164);
   }
 
   .card__info-lenguajes{
@@ -104,21 +105,26 @@
 
   .card__box-buttons{
     display: flex;
+    gap: 6px;
     justify-content: space-between;
     margin-block: 10px;
   }
 
   .card__button{
-    border: none;
-    width: 48%;
+    flex: 1;
+    background-color: rgb(107, 107, 107);
+    color: white;
+    text-decoration: none;
     padding: 10px;
     border-radius: 8px;
     font-size: 1rem;
-    cursor: pointer;
+    text-align: center;
+
   }
 
   .card__button-web-site{
-
+    background-color: rgb(255, 255, 255);
+    color:  rgb(107, 107, 107);
   }
 
   .card__button-code{
